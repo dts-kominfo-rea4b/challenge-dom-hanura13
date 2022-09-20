@@ -9,10 +9,10 @@
   <body>
     <div id="app">
       <!-- TODO: Buatlah sebuah header dengan id todo-title -->
-      <h1>TODO LIST</h1>
+      <h1 id="todo-title"></h1>
       
       <!-- TODO: Buatlah sebuah subtitle dengan id todo-subtitle -->
-      <p>Today i need to</p>
+      <p id="todo-subtitle"></p>
       <!-- Section: input -->
       
       <!-- TODO: Buatlah sebuah input bertipe text dengan id todo-input -->
@@ -33,6 +33,11 @@
       let input = document.querySelector('#todo-input');
       let output = document.querySelector('#todo-output');
 
+      const title = document.querySelector('#todo-title');
+      title.innerHTML += 'TODO LIST';
+
+      const subtitle = document.querySelector('#todo-subtitle');
+      subtitle.innerHTML += 'Today i need to';
       // TODO: Buatlah sebuah fungsi dengan nama fnClickHandler
       // Fungsi yang digunakan untuk menambahkan tulisan
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
