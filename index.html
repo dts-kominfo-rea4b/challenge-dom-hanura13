@@ -61,7 +61,7 @@
       
       // TODO: register event onkeypress / addEventListener untuk input
       // sehingga saat di input ditekan enter akan menjalankan fungsi fnClickHandler juga
-      input.addEventListener('keydown', () => {
+      input.addEventListener('keypress', () => {
         if(event.key === 'Enter') {
             const isi = input.value;
             fnClickHandler(isi);
